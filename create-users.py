@@ -46,7 +46,7 @@ def main():
         #These lines are commented out for testing purposes. The script will actually create the user accounts if uncommented.
 	#This time, cmd execute the adduser command to create the account.
 	#Only uncomment when you are ready to run. 
-        print cmd
+        print(cmd)
         os.system(cmd)
 
         #Display a status message showing which user account the password is being set for.
@@ -58,7 +58,7 @@ def main():
         #These lines are commented out for testing purposes. The script will actually create the user accoutns if uncommented.
         #This time, cmd executes the passwd command to set the user's password
         #Only uncomment when you are ready to run. 
-        print cmd
+        print(cmd)
         os.system(cmd)
 
         for group in groups:
@@ -67,7 +67,7 @@ def main():
             if group != '-':
                 print("==> Assigning %s to the %s group..." % (username,group))
                 cmd = "/usr/sbin/adduser %s %s" % (username,group)
-                print cmd
+                print(cmd)
                 os.system(cmd)
 
 if __name__ == '__main__':
